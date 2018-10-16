@@ -11,8 +11,8 @@ myImage.onclick = function() {
 var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 function setUserName() {
-    var storedName = prompt('PLease enter your name.');
-    localStorage.setItem('name', myName);
+    var storedName = prompt('Please enter your name.');
+    localStorage.setItem('name', storedName);
     myHeading.textContent = 'Welcome to Spooktober, ' + storedName;
 }
 if(!localStorage.getItem('name')) {
